@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Логотип">
+        <div class="header__info">
+            <a class="header__link">Авто из Японии</a>
+            <a class="header__link">Авто из Китая</a>
+            <a class="header__link">Авто из Кореи</a>
+            <a class="header__link">О нас</a>
+        </div>
+        <div class="header__contacts">
+            <img  class="header__icon" src="./images/Subtract.jpg" alt="Иконка whattsap">
+            <img class="header__icon" src="./images/teleg.jpg" alt="Иконка телеграм">
+            <div class="header__block-number">
+                <p class="header__number">+7 123 456 78 90</p>
+                <p class="header__text">Звонок по РФ бесплатный</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="price">
+            <div class="price__block">
+            <h1 class="price__title">Авто из Японии, Кореи и Китая с выгодой до 30% ниже рынка РФ</h1>
+            <h2 class="price__subtitle">Высокий сервис для клиентов, от заключения договора до выдачи/отправки авто. 
+            </h2>
+            <button class="price__button">Рассчитать стоимость</button>
+        </div>
+            <img class="price__img" src="./images/auto.png" alt="Три автомобиля">
+            <img class="price__vector" src="./images/Vector2.png" alt="Вектор">
+        </section>
+        <section class="cars">
+            <h2 class="cars__title">Автомобили из Японии</h2>
+            <div class="cars__info">
+                <p class="cars__subtitle">Toyota, Honda, Nissan и другие японские автомобили.</p>
+                <button class="cars__button">Смотреть все</button>
+            </div>
+            <div class="popup_pictures">
+                <div class="elements"></div>
+                <button class="elements__button">Смотреть все</button>
+              </div>
+          
+              <template id="cars-template">
+                <article class="cars__block">
+                  <img class="cars__image" alt="фотография церкви" />
+                  <div class="grid-element__description">
+                    <h2 class="cars__name"></h2>
+                    <p class="cars__description"></p>                    
+                    <div class="cars__info-block">
+                        <p class="cars__price"></p>
+                    <button class="grid-element__button" type="button">
+                        Оставить заявку
+                    </button>
+                </div>
+                  </div>
+                </article>
+              </template>
+        </section>
+        <section class="katalog">
+            <h2 class="cars__title">Автомобили из Китая и Кореи</h2>
+            <div class="cars__info">
+                <p class="cars__subtitle">Поможем с покупкой автомобилей из Китая и Кореи.</p>
+            </div>
+            <div class="katalog__blocks">
+                <div class="katalog__block">
+                <h3 class="katalog__title">Автомобили из Китая</h3>
+                <p class="katalog__subtitle">Chery, Haval, EXEED и другие китайские автомобили.</p>
+                <button class="katalog__button">Смотреть в каталоге</button>
+            </div>
+            <div class="katalog__block">
+                <h3 class="katalog__title">Автомобили из Кореи</h3>
+                <p class="katalog__subtitle">Hyundai, KIA, Genesis и другие корейские автомобили.</p>
+                <button class="katalog__button">Смотреть в каталоге</button>
+            </div>
+            </div>
+        </section>
+        <section class="about">
+            <div>
+            <h4 class="about__title">О нас</h4>
+            <p class="about__text">Компания «AUTOCENTER» предлагает широкий выбор автомобилей от ведущих мировых производителей. Мы специализируемся на продаже новых и подержанных авто. Наша команда профессионалов поможет вам выбрать идеальный автомобиль, учитывая ваши потребности и бюджет.</p>
+        </div>
+        <img class="about__logo" src="./images/101.svg" alt="Логотип">
+        </section>
+        <div class="about__blocks">
+            <div  class="about__block">
+                <img class="about__image" src="./images/Vector(13).svg">
+                <p class="about__caption">Короткие сроки доставки </p>
+            </div>
+            <div  class="about__block">
+                <img class="about__image" src="./images/Vector-1.svg">
+                <p class="about__caption">Полное сопровождение. Связь с клиентом 24/7
+                </p>
+            </div>
+            <div  class="about__block">
+                <img class="about__image" src="./images/Vector(14).svg">
+                <p class="about__caption">Опыт работы более 5 лет 
+                </p>
+            </div>
+            <div  class="about__block">
+                <img class="about__image" src="./images/Frame (1).svg">
+                <p class="about__caption">⁠Привезем авто с выгодой до 30% ниже рынка РФ</p>
+            </div>
+            <div  class="about__block">
+                <img class="about__image" src="./images/Vector-6.svg">
+                <p class="about__caption">Высокий сервис для клиентов</p>
+            </div>
+            <div  class="about__block">
+                <img class="about__image" src="./images/Vector-7.svg">
+                <p class="about__caption">Полная клиентоориентированность
+                </p>
+            </div>
+            <div  class="about__block">
+                <img class="about__image" src="./images/Vector-8.svg">
+                <p class="about__caption">⁠Профессионализм сотрудников компании</p>
+            </div>
+        </div>
+        <button class="elements__button about__button">Рассчитать стоимость</button>
+        <section class="reviews">
+            <h4 class="reviews__title"> Отзывы клиентов <span style="color: #757575; font-weight: 400; margin-right: 10px;">253</span></h4>
+            <div class="reviews__numbers">
+            <p class="reviews__number">4,5</p>
+            <img class="reviews__img" src="./images/Frame12.jpg">
+        </div>
+        
+        </section>
+    </div>
+        <div class="overlow">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="reviews__block ">
+                    <img class="reviews__avatar" src="./images/Ellipse 1 (1).jpg">
+                    <div class="reviews__info">
+                        <h5 class="reviews__name">Иванова Ольга</h5>
+                        <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                        <p class="reviews__text">
+                            Все круто, все понравилось! не первый раз вез себе автомобиль из кореи с пробегом. Подкупило то, что мне потом предложили снять обзор на моего субаря)
+                        </p>
+                        <p class="reviews__data">7 октября 2023 г.</p>
+                    </div>
+                </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse 1 (2).jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Зайцева Анастасия</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        Порекомендовал товарищ, потому что не знал где купить автомобили из японии. Спасибо, доставка авто супер, буду рекомендовать друзьям ❤️
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse1.jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Киселёв Василий</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (1).svg">
+                    <p class="reviews__text">
+                        По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse 1 (2).jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Зайцева Анастасия</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        Порекомендовал товарищ, потому что не знал где купить автомобили из японии. Спасибо, доставка авто супер, буду рекомендовать друзьям ❤️
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse1.jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Киселёв Василий</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse 1 (1).jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Иванова Ольга</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        Все круто, все понравилось! не первый раз вез себе автомобиль из кореи с пробегом. Подкупило то, что мне потом предложили снять обзор на моего субаря)
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse1.jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Киселёв Василий</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse 1 (1).jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Иванова Ольга</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        Все круто, все понравилось! не первый раз вез себе автомобиль из кореи с пробегом. Подкупило то, что мне потом предложили снять обзор на моего субаря)
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse1.jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Киселёв Василий</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (1).svg">
+                    <p class="reviews__text">
+                        По итогу хочу сказать следующее: во Владивосток доставить автомобиль из Японии - очень быстро и дешево, Все в семье были довольны.
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="reviews__block ">
+                <img class="reviews__avatar" src="./images/Ellipse 1 (2).jpg">
+                <div class="reviews__info">
+                    <h5 class="reviews__name">Зайцева Анастасия</h5>
+                    <img class="reviews__img" src="./images/Frame 12 (2).svg">
+                    <p class="reviews__text">
+                        Порекомендовал товарищ, потому что не знал где купить автомобили из японии. Спасибо, доставка авто супер, буду рекомендовать друзьям ❤️
+                    </p>
+                    <p class="reviews__data">7 октября 2023 г.</p>
+                </div>
+            </div></div>
+            <div class="swiper-button-prev">
+                <img src="./images/Frame269.svg" alt="Previous">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/Frame268.svg" alt="Previous">
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        <section class="contact">
+            <div class="contact__info">
+            <h5 class="contact__title">Контактная информация</h5>
+            <p class="contact__subtitle">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</p>
+            <div class="contact__links">
+                <div class="contact__block">
+                    <p class="contact__text">Позвонить</p>
+                    <a class="contact__link">+7 123 456 78 90</a>
+                    <p class="contact__text">Написать</p>
+                    <a class="contact__link">info@example.com</a>
+                    <p class="contact__text">Адрес</p>
+                    <a class="contact__link">123 Main Street, Tokyo, Japan</a>
+                </div>
+                <div class="contact__block">
+                    <a class="contact__link contact__link-block"><img class="contact__image" src="./images/Group(3).svg">Мы на 2гис</a>
+                    <a class="contact__link contact__link-block"><img class="contact__image" src="./images/Maps_v3 1.svg">Мы на Яндекс картах</a>
+                    <a class="contact__link contact__link-block"><img class="contact__image" src="./images/Group 4.svg">VL справочник</a>
+                </div>
+            </div>
+        </div>
+        <form class="form window" name='registration' onSubmit="return formValidation();">
+            <h5 class="window__title">Оставить заявку</h5>
+            <div class="window__block">
+                <div class="window__label-style">
+                <label class="window__label" for="userid">Имя</label>
+                <input class="window__input" type="text" placeholder="Введите имя" name="userid" size="12">
+                <p class="error"> Введено не верное количество символов</p>
+            </div>
+            <div class="window__label-style">
+                <label class="window__label"  for="passid">Телефон (Обязательно)</label>
+                <input class="window__input" type="tel" name="passid" id="phone" size="12" placeholder="+7">
+                <p class="error-number"> Введено не верный формат номера</p>
+            </div>
+        </div><div class="window__label-style">
+            <label class="window__label" for="username">Уточните свой вопрос</label>
+            <input class="window__input-big" type="text" name="username" size="50" placeholder="Введите текст сообщения">
+            <p class="error-text"> Введено не верное количество символов</p>
+        </div>
+            <div class="window__block">
+                <div class="window__block">
+                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes" required>
+                    <label for="happy"></label>
+                <p class="window__text">С  <a class="window__link">правилами политики конфиденциальности</a> ознакомлен</p>
+            </div>
+                <button type="submit" name="submit" value="Submit" class="window__button">Отправить</button>
+            </div>
+            
+        </а>
+        </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__flex">
+                <div class="footer__block">
+                    <img class="footer__logo" src="./images/logo-footer.svg" alt="Логотип">
+                    <div style="display: flex; flex-direction: column;">
+                        <a class="footer__link-info">О нас</a>
+                        <a class="footer__link-info">Каталог авто</a>
+                        
+                    </div>
+                </div>
+                <div class="footer__blocks">
+                    <div class="footer__info">
+                        <h6 class="footer__title">Авто из Японии</h6>
+                        <div class="footer__links">
+                            <a class="footer__link">Toyota</a>
+                            <a class="footer__link">Nissan</a>
+                            <a class="footer__link">Honda</a>
+                            <a class="footer__link">Mazda</a>
+                            <a class="footer__link">Mitsubishi</a>
+                            <a class="footer__link">Subaru</a>
+                            <a class="footer__link">Suzuki</a>
+                            <a class="footer__link">Lexus</a>
+                            <a class="footer__link">BMW</a>
+                            <a class="footer__link">Daihatsu</a>
+
+                        </div>
+                    </div>
+                    <div class="footer__info">
+                        <h6 class="footer__title">Авто из Китая</h6>
+                        <div class="footer__links">
+                            <a class="footer__link">Changan</a>
+                            <a class="footer__link">Exeed</a>
+                            <a class="footer__link">Exeed</a>
+                            <a class="footer__link">Chery</a>
+                            <a class="footer__link">Haval</a>
+                            <a class="footer__link">FAW</a>
+                            <a class="footer__link">BYD</a>
+                            <a class="footer__link">JAC</a>
+                            <a class="footer__link">Lifan</a>
+                            <a class="footer__link">DongFeng</a>  
+                            
+                        </div>
+                    </div>
+                    <div class="footer__info">
+                        <h6 class="footer__title">Авто из Кореи</h6>
+                        <div class="footer__links">
+                            <a class="footer__link">Hyundai</a>
+                            <a class="footer__link">Kia</a>
+                            <a class="footer__link">SsangYong</a>
+                            <a class="footer__link">Daewoo</a>
+                            <a class="footer__link">Samsung</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="footer__info-block">
+                <div>
+                    <p class="footer__text">Политика конфиденциальности</p>
+                    <p class="footer__data">© 2003–2024 ООО "Автоцентр"</p>
+                </div>
+                <div class="footer__icons">
+                    <a class="footer__link-icon">
+                    <img class="footer__icon" src="./images/Subtract (3).svg">
+                </a>
+                <a class="footer__link-icon">
+                    <img class="footer__icon" src="./images/Subtract (1).svg">
+                </a><a class="footer__link-icon">
+                    <img class="footer__icon" src="./images/Subtract (2).svg">
+                </a>
+                    <div class="footer__numbers">
+                        <p class="footer__number">+7 123 456 78 90</p>
+                        <p class="footer__caption">Звонок по РФ бесплатный</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
